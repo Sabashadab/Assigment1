@@ -1,0 +1,43 @@
+<html>
+<head>
+<title><i> JS PROJECT </i></title>
+<style>
+
+</style>
+</head>
+<body>
+
+<h1><i><b>Basic Javascript Project</i></b></h1>
+<h2><b>EXAM RESULT CALCULATOR</b></h2>
+
+<label for="MARATHI"><i>MARATHI</i>:</lable><br>
+<input type="NUMBER" id="MARATHI"name="MARATHI"><br><br>
+<label for="HINDI"><i>HINDI</i>:</lable><br>
+<input type="NUMBER" id="HINDI"name="HINDI"><br><br>
+<label for="ENGLISH"><i>ENGLISH</i>:</lable><br>
+<input type="NUMBER" id="ENGLISH"name="ENGLISH"><br><br>
+<label for="MATHS"><i>MATHS</i>:</lable><br>
+<input type="NUMBER" id="MATHS"name="MATHS"><br><br>
+<label for="SCIENCE"><i>SCIENCE</i>:</lable><br>
+<input type="NUMBER" id="SCIENCE"name="SCIENCE"><br><br>
+<input type="SUBMIT" onclick="calculate()"value="RESULT">
+
+<p id="RESULT"></p>
+<script>
+function calculate(){
+A=parseInt(document.getElementById("MARATHI").value);
+B=parseInt(document.getElementById("HINDI").value);
+C=parseInt(document.getElementById("ENGLISH").value);
+D=parseInt(document.getElementById("MATHS").value);
+E=parseInt(document.getElementById("SCIENCE").value);
+Z=A+B+C+D+E;
+document.getElementById("RESULT").innerHTML=
+"The Sum of All Subject is:"+Z;
+}
+</script>
+</body>
+</html>
+
+
+
+
